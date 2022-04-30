@@ -25,12 +25,12 @@
 # else:
 #     print('negative')
 
-# scientist_list = ['Einstein', 'Curie', 'Newton']
-# dob_list = [1879, 1867, 1643]
-# for scientist, dob in zip(scientist_list, dob_list):
-#     # print(scientist, 'was born in', dob)
-#     # print("{} was born in {}".format(scientist, dob))
-#     print(f"{scientist} was born in {dob}")
+scientist_list = ['Einstein', 'Curie', 'Newton']
+dob_list = [1879, 1867, 1643]
+for scientist, dob in zip(scientist_list, dob_list):
+    # print(scientist, 'was born in', dob)
+    # print("{} was born in {}".format(scientist, dob))
+    print(f"{scientist} was born in {dob}")
 
 # scientist_list = ['Einstein', 'Curie', 'Newton']
 # for index, scientist in enumerate(scientist_list):

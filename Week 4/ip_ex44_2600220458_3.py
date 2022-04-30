@@ -3,7 +3,7 @@
 """
 Author: Khoo Zhenyu
 Student ID: 2600220458-3
-Program description: Sums the parallel values of both lists, up till when the sum hits 25.
+Program description: Sums the parallel values of both lists, up until the sum reaches more than 25.
 
 """
 
@@ -12,8 +12,8 @@ number_list_2 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 print("Length of the first list: ", len(number_list_1))
 print("Length of the second list: ", len(number_list_2))
-for n1, n2 in zip(number_list_1, number_list_2):
-    summa = n1 + n2
+for number_1, number_2 in zip(number_list_1, number_list_2):
+    summa = number_1 + number_2
     print("The sum is", summa)
     if summa > 25:
         print("The sum is greater than 25")

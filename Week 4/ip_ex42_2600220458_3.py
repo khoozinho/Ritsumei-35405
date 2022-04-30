@@ -3,7 +3,7 @@
 """
 Author: Khoo Zhenyu
 Student ID: 2600220458-3
-Program description: Checls if a number is a positive, negative or zero.
+Program description: Checks if a number is a positive, negative or zero.
 
 """
 # Constant value
