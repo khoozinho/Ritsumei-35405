@@ -5,6 +5,18 @@ Author: Khoo Zhenyu
 Student ID: 2600220458-3
 Program description:
 
+The initial portion is to create a couple of lists and then
+combining them into a list, and then adding a third list into the same list using
+the .append method. The following portion is to print the length of the list and 
+reversing it.
+
+A dictionary is also made and enumeration was used. There is also additions
+made to the dictionary by using the .update method.
+
+Lastly, the index list is sliced and the values put in a list, of which one is
+popped and the rest filtered, and the largest value in the list is picked out
+using the max function.
+
 """
 # The two scientist lists.
 scientist_list_1 = ['Einstein','Curie', 'Newton', 'Darwin']
@@ -42,7 +54,7 @@ scientist_dict.update(scientist_dict_2)
 # Reprinting of scientist dictionary.
 print("Scientist dictionary:", scientist_dict)
 
-# err idk
+# Honestly not sure what to call this function.
 index_list = list(scientist_dict.values())
 print("Index list:", index_list)
 
