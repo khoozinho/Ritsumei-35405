@@ -29,7 +29,7 @@
 # languages_2 = ["ALGOL", "SNUBOL", "BASIC"]
 # print('initial list;', languages_1)
 # for l in languages_2:
-#     languages_1.append(l)
+    # languages_1.append(l)
 # print('updated list;', languages_1)
 
 # our_list = []
@@ -134,3 +134,10 @@
 # poppy = ls.pop("COBOL")
 # print("2x modified dict:", ls)
 # print("popped element:", poppy)
+
+langs = ["FORTRAN", "COBOL", "LISP"]
+new_list = []
+
+for l in langs:
+    if "L" in language:
+        
