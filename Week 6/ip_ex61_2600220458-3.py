@@ -65,7 +65,7 @@ print("Numbers list:", numbers)
 one = numbers.pop(0)
 
 # Using for loop to remove odd numbers
-for number in numbers:
+    for number in numbers:
     if (number % 2) != 0:
         numbers.remove(number)
 
