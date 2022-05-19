@@ -54,7 +54,7 @@ scientist_dict.update(scientist_dict_2)
 # Reprinting of scientist dictionary.
 print("Scientist dictionary:", scientist_dict)
 
-# Honestly not sure what to call this function.
+# Get values of the dictionary and put them in a list.
 index_list = list(scientist_dict.values())
 print("Index list:", index_list)
 
