@@ -32,12 +32,12 @@
     # languages_1.append(l)
 # print('updated list;', languages_1)
 
-# our_list = []
-# i = 0
-# while len(our_list) < 10:
-#     our_list.append(i)
-#     i += 1
-# print("our list;", our_list)
+our_list = []
+i = 0
+while len(our_list) < 10:
+    our_list.append(i)
+    i += 1
+print("our list;", our_list)
 # print("the length of our list;", len(our_list))
 # maximum = max(our_list)
 # minimum = min(our_list)
@@ -135,9 +135,9 @@
 # print("2x modified dict:", ls)
 # print("popped element:", poppy)
 
-langs = ["FORTRAN", "COBOL", "LISP"]
-new_list = []
+# langs = ["FORTRAN", "COBOL", "LISP"]
+# new_list = []
 
-for l in langs:
-    if "L" in language:
+# for l in langs:
+#     if "L" in language:
         
