@@ -69,3 +69,33 @@ print("My tuple:", my_tuple, '\nMy set:', my_set)
 print('The word (string) "orange" is an element in the tuple:', "orange" in my_tuple)
 print('The word (string) "lemon" is not an element in the set:', "lemon" not in my_tuple)
 
+mnl = [[1, 1, 3], ["apple", "orange", "orange"], [0], [0, 0, 0]]
+print("My list:", mnl)
+
+for index, lst in enumerate(mnl):
+    mnl[index] = list(dict.fromkeys(lst))
+
+print("My list with duplicates removed:", mnl)
+
+temp = []
+for element in mnl:
+    if element not in temp:
+        temp.append(element)
+
+mnl = temp
+print("dupes are removed:", mnl)
+
+my_str = "the phenomenon time dilation is the difference in the elapsed time as measured by two clocks"
+split_str = my_str.split()
+print("My string:", my_str)
+print(type(split_str))
+
+string_counts = {}
+for elem in split_str:
+    if elem in string_counts:
+        string_counts[elem] += 1
+    else:
+        string_counts[elem] = 1
+
+print("String counts:", string_counts)
+print('How many times we encountered the string time:', string_counts["time"])
