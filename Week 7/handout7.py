@@ -72,8 +72,8 @@ print('The word (string) "lemon" is not an element in the set:', "lemon" not in 
 mnl = [[1, 1, 3], ["apple", "orange", "orange"], [0], [0, 0, 0]]
 print("My list:", mnl)
 
-for index, lst in enumerate(mnl):
-    mnl[index] = list(dict.fromkeys(lst))
+for number, dakey in enumerate(mnl):
+    mnl[number] = list(dict.fromkeys(dakey))
 
 print("My list with duplicates removed:", mnl)
 
