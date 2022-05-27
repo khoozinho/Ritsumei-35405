@@ -47,7 +47,7 @@ def passornot(score_dict, passed, failed):
     lists. As an argument, it takes a dictionary where the keys
     are the student names and the values are the scores. the two
     other arguments are two lists to add the names to."""
-    for name, score in names_scores.items():
+    for name, score in score_dict.items():
         if score < 60:
             failed.append(name)
         else:
@@ -75,3 +75,9 @@ greeting("Bob", "Hi, ") #2 positional arguements
 
 print("Overwriting the default value for message and times (order is impt):")
 greeting("Bob", "Hi, ", 1) #3 positional arguements
+
+print("Overwriting times, but because of the order, the name needs to be specificed in the call: ")
+greeting("Bob", times=5) #1 positional and one keyword argument
+
+print("here, everything is specified by name/keyword, so the order is unambiguous: ")
+greeting(times = 2, message= "Hi, ", name="Bob") #3 positional and two keyword arguments
