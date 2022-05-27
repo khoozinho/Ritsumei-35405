@@ -81,3 +81,5 @@ greeting("Bob", times=5) #1 positional and one keyword argument
 
 print("here, everything is specified by name/keyword, so the order is unambiguous: ")
 greeting(times = 2, message= "Hi, ", name="Bob") #3 positional and two keyword arguments
+
+print(passornot.__doc__)
