@@ -14,6 +14,7 @@ num_lst = [[1,1,4,66],[-55,7],[-1,43,55,-6,12,12,4]]
 even_numbers = []
 odd_numbers = []
 
+# Functions
 def flatten_list(a_list):
     """Flattens the list - makes a normal list from a nested list."""
     flat_num_lst = []
