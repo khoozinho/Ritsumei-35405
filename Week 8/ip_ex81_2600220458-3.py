@@ -3,7 +3,10 @@
 """
 Author: Khoo Zhenyu
 Student ID: 2600220458-3
-Program description:
+Program description: This program takes a nested list, and flattens it.
+It also filters and removes out negative numbers, and separates
+the remaining positive numbers into even and odd lists. It also removes
+duplicates from both lists.
 
 """
 # Lists
@@ -43,7 +46,7 @@ print("Original nested list:", num_lst)
 flat_num_lst = flatten_list(num_lst)
 print("Flattened list:", flat_num_lst)
 
-# Filters the numbers in the list and stores them in odd and even lists,
+# Filters the numbers in the list and stores them in odd and even lists
 filter_numbers(flat_num_lst)
 print("The even numbers:", even_numbers)
 print("The odd numbers:", odd_numbers)
