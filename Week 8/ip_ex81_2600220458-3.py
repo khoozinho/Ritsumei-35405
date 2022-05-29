@@ -26,7 +26,7 @@ def flatten_list(a_list):
 
 def filter_numbers(number_list, evens = even_numbers, odds = odd_numbers):
     """Filters the numbers in a list and stores them in two lists,
-    odd and even numebers. It takes 3 arguments, the number list,
+    odd and even numbers. It takes 3 arguments, the number list,
     the even numbers and odd numbers."""
     for i in number_list:
         if i > 0:
