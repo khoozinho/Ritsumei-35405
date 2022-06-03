@@ -76,7 +76,84 @@
 
 # add(3)
 
-n = 5555
-print(id(n))
-n += 3
-print(id(n))
+# n = 5555
+# print(id(n))
+# n += 3
+# print(id(n))
+
+# my_list = ['oranges', 'grapes']
+# print("Original list:", my_list)
+# print(id(my_list))
+# my_list.append('apples')
+# print("List is modified by adding a new element to it:", my_list)
+# print(id(my_list))
+
+# my_list = ['oranges', 'grapes']
+# print("Original list:", my_list)
+
+# def modify_list(elem, remove_index):
+#     my_list.append(elem)
+#     my_list.pop(remove_index)
+
+# modify_list('apples', 1)
+# print("List is modified by adding a new element to it:", my_list)
+
+# my_list = ['oranges', 'grapes']
+# print("Original list:", my_list)
+
+# def make_new_list(lst, elem, remove_index):
+#     lst.append(elem)
+#     lst.pop(remove_index)
+#     return lst
+
+# new_list = make_new_list(my_list.copy(), 'apple', 1)
+# print("New list:", new_list)
+# print("Original list:", my_list)
+
+# print("ID of the original list:", id(my_list))
+# print("ID of the new list:", id(new_list))
+
+# file = open('w9.txt', 'w', encoding='utf-8')
+#file = open('/Users/zhenyu/Documents/Github Repository/Ritsumei-35405/Week 9/w9.txt, 'w', encoding='utf-8')
+
+# with open('w9.txt', 'w', encoding='utf-8') as f:
+#     f.write('Hello, world!\n')
+#     f.write("File starts\n")
+#     f.write("Another line...")
+#     f.write("Another string.")
+
+with open('w9.txt', 'r', encoding='utf-8') as f:
+    data = f.read()
+
+print(data)
+
+with open('w9.txt', 'r', encoding='utf-8') as f:
+    data = f.readlines()
+
+print(data)
+print(type(data))
+
+with open('w9.txt', 'r', encoding='utf-8') as f:
+    data = f.read().splitlines()
+
+print(data)
+
+my_numbers = [1,2,3,4,76,8,9,9]
+
+with open('testw9.txt', 'w', encoding='utf-8') as f:
+    for i in my_numbers:
+        # the elements of my_numbers are written line by line to testw9.txt as str:
+        f.write(str(i) + '\n')
+
+with open("testw9.txt", 'r', encoding='utf-8') as f:
+    data = f.read().splitlines()
+
+print(data)
+print("type of the list elements:", type(data[0]))
+
+new_data = []
+for i in data:
+    new_data.append(int(i))
+
+print(new_data)
+print("type of the list elements:", type(new_data[0]))

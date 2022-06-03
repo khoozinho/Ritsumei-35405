@@ -1,0 +1,3 @@
+Hello, world!
+File starts
+Another line...Another string.
