@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 # arr_1 = np.array([1, 2, 3, 4, 5])
 # arr_2 = np.array([[1.3, 2.5, 3.5],[1.22, 1.2, 2.33]])
@@ -19,8 +19,8 @@ import numpy as np
 # print(arr)
 # arr = np.arange(5, 18, 3)
 # print(arr)
-arr = np.linspace(0, 20, num=7)
-print(arr)
+# arr = np.linspace(0, 20, num=7)
+# print(arr)
 
 # my_list = [[1.23,5.44,5.3],[0.1,5.0,1.44]]
 # print(my_list,"\n")
@@ -37,4 +37,3 @@ print(arr)
 # print("First array:", arr1)
 # print("Second array:", arr2)
 # print("Addition of the two arrays:", arr1+arr2)
-
