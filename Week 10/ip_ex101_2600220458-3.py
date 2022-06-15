@@ -49,7 +49,7 @@ stacked_array = np.stack((arr_1, arr_2), axis=0)
 print("\nStacked array:", stacked_array)
 
 # Average of the first 1-D array
-average = np.mean(stacked_array[0])
+average = np.average(stacked_array[0])
 print("\nAverage of the stacked array[0]:", average)
 
 # Summation of the first 5 elements of the second 1-D array
