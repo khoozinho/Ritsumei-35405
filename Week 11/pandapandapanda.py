@@ -1,11 +1,11 @@
 import pandas as pd
-import numpy as np
+titanic = pd.read_csv('titanic.csv')
+print(titanic.head(8))
+print(titanic.tail(10))
 
-mydataset = {
-  'cars': ["BMW", "Volvo", "Ford"],
-  'passings': [3, 7, 2]
-}
+# titanic.to_excel("titanic.xlsx", sheet_name="passengers", index=False)
 
-myvar = pd.DataFrame(mydataset)
+titanic = pd.read_excel("titanic.xlsx", sheet_name="passengers")
 
-print(myvar)
+ages = titanic["Age"]
+print(ages.head())
