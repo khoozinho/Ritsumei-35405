@@ -14,6 +14,7 @@ class Cat:
 
 marie = Cat("Marie", "black", 3)
 print(marie.describe())
+
 print(marie.say("Meow"))
 
 # marie = Cat("Marie", "orange", 9)
