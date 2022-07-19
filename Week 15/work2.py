@@ -43,3 +43,20 @@ loki = Munchkin("Loki", "black", 7, 4.2, "long")
 print(loki.name + "'s hair is" + loki.hair)
 print(loki.describe())
 print(loki.another_describe())
+
+print(loki.name, "is", loki.animal_type, "but has", loki.characteristic)
+print(loki.name, "is", loki.property)
+
+loki.property = "very cute"
+
+print(loki.name, "is", loki.property)
+loki_dict = loki.cat_info()
+
+print("Dictionary about Loki:", loki_dict)
+print("Type of the onject Loki:", type(loki))
+
+print("Is loki an instance of Munchkin?")
+print(isinstance(loki, Munchkin))
+
+print("Is loki an instance of Cat?")
+print(isinstance(loki, Cat))
