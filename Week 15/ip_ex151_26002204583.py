@@ -91,28 +91,23 @@ class Healer(Adventurer):
         return
 
 
-def run():
-    healer = Healer("Bob the Healer", 80)
-    adventurers = ["Emma", "Peter", "Anna", "Jim", "John"]
-    healed_list = []
+healer = Healer("Bob the Healer", 80)
+adventurers = ["Emma", "Peter", "Anna", "Jim", "John"]
+healed_list = []
 
-    for name in adventurers:
-        print()
+for name in adventurers:
+    print()
 
-        adventurer = Adventurer(name)
-        adventurer.intro()
+    adventurer = Adventurer(name)
+    adventurer.intro()
 
-        if adventurer.needs_heal():
-            print(f"Health of {adventurer.name} is {str(adventurer.health)}")
-            healer.healer_intro()
-            healer.heal(adventurer)
-            print(
-                f"Health of {adventurer.name} now is {str(adventurer.health)}")
+    if adventurer.needs_heal():
+        print(f"Health of {adventurer.name} is {str(adventurer.health)}")
+        healer.healer_intro()
+        healer.heal(adventurer)
+        print(
+            f"Health of {adventurer.name} now is {str(adventurer.health)}")
 
-        healed_list.append((adventurer.name, adventurer.health))
+    healed_list.append((adventurer.name, adventurer.health))
 
-    print(f"\n{healed_list}")
-
-
-if __name__ == "__main__":
-    run()
+print(f"\n{healed_list}")
