@@ -7,10 +7,7 @@ Program description: This program runs a simulation of 4 adventurers and 1 heale
 There is usage of object-oriented programming. In this program, there is the 'Adventurer'
 class, as wekk as the 'Healer' class. The 'Adventurer' class has the 'intro' function and 
 the 'need heals' function. The 'Healer' class has the 'healer_intro' function and the 'heal'
-function. The 'run' function is the main function of the program. It checks the status of the
-adventurer, and whether they need to be healed. If they need to be healed, the healer will
-heal them, using up his medicine stock. The 'run' function will also print the status of the
-adventurer.
+function. 
 """
 
 from numpy import random
@@ -105,8 +102,7 @@ for name in adventurers:
         print(f"Health of {adventurer.name} is {str(adventurer.health)}")
         healer.healer_intro()
         healer.heal(adventurer)
-        print(
-            f"Health of {adventurer.name} now is {str(adventurer.health)}")
+        print(f"Health of {adventurer.name} now is {str(adventurer.health)}")
 
     healed_list.append((adventurer.name, adventurer.health))
 
