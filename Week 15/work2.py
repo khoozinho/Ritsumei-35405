@@ -37,7 +37,7 @@ class Munchkin(Cat):
         return super().describe() + " and " + self.color
 
 oliver = Munchkin("Oliver", "black", 1, 2.4)
-print(oliver.name + "'s hair is" + oliver.hair)
+print(oliver.name + "'s hair is " + oliver.hair)
 
 loki = Munchkin("Loki", "black", 7, 4.2, "long")
 print(loki.name + "'s hair is" + loki.hair)
